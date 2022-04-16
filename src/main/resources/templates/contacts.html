@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Magellano - NFT Marketplace Website Template by Ansonika">
+    <meta name="author" content="Ansonika">
+    <title>OpenStory - NFT Marketplace Website Template</title>
+
+    <!-- FAVICONS-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- SPECIFIC CSS -->
+    <link href="css/contacts.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Page Preload -->
+				
+	<div th:insert="fragment/header :: navbar (aktif='contact')"/>
+	<!-- /header -->
+	
+	<main>
+
+	    <div class="hero_single inner_pages jarallax" data-jarallax>
+	        <img class="jarallax-img" src="img/contacts-bg.jpg" alt="">
+	        <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
+	            <div class="container">
+	                <div class="row justify-content-center">
+	                    <div class="col-xl-9 col-lg-10 col-md-8">
+	                        <h1 class="slide-animated one">Contact Us</h1>
+	                        <p class="slide-animated two">Collect and sell book extraordinary NFTs</p>
+	                    </div>
+	                </div>
+	                <!-- /row -->
+	            </div>
+	        </div>
+	        <div class="wave hero"></div>
+	    </div>
+	    <!-- /hero_single -->
+
+	    <div class="container margin_60_40">
+	        <div class="row justify-content-center">
+	            <div class="col-lg-6 col-md-6 add_bottom_25 pe-lg-5">
+	                <h5 class="mb-4">Drop Us a Line</h5>
+	                <div id="message-contact"></div>
+	                <form method="post" action="assets/contact.php" id="contactform" autocomplete="off">
+	                    <div class="form-group">
+	                        <input class="form-control" type="text" placeholder="Name" id="name_contact" name="name_contact">
+	                    </div>
+	                    <div class="form-group">
+	                        <input class="form-control" type="email" placeholder="Email" id="email_contact" name="email_contact">
+	                    </div>
+	                    <div class="form-group">
+	                        <textarea class="form-control" placeholder="Message" id="message_contact" name="message_contact"></textarea>
+	                    </div>
+	                    <div class="form-group">
+	                        <input class="form-control" type="text" id="verify_contact" name="verify_contact" placeholder="Are you human? 3 + 1 =">
+	                    </div>
+	                    <div class="form-group">
+	                        <input class="btn_1" type="submit" value="Submit" id="submit-contact">
+	                    </div>
+	                </form>
+	            </div>
+	            <div class="col-lg-4 col-md-6 add_bottom_25">
+	                <div class="box_contacts">
+	                    <i class="bi bi-life-preserver"></i>
+	                    <h2>Help Center</h2>
+	                    <a href="#0">+62 0123 4567 4567</a> - <a href="#0">help@openstory.com</a>
+	                    <small>MON to FRI 9am-6pm</small>
+	                </div>
+	                <div class="box_contacts">
+	                    <i class="bi bi-cloud-arrow-up"></i>
+	                    <h2>Submissions</h2>
+	                    <a href="#0">+62 0123 4567 4567</a> - <a href="#0">info@openstory.com</a>
+	                    <small>MON to FRI 9am-6pm</small>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- /container -->
+	    
+	</main>
+	<!-- /main -->
+
+	<div th:insert="fragment/footer :: footer (aktif='home')"/>
+	<!--/footer-->
+
+	<div id="toTop"></div><!-- Back to top button -->
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="js/common_scripts.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/common_func.js"></script>
+
+    <!-- SPEFICI SCRIPTS -->
+    <script src="assets/validate.js"></script>
+
+</body>
+</html>
